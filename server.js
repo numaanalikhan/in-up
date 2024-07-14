@@ -10,8 +10,9 @@ mongoose
     console.log(err);
 })
 
+app.use(express.json());
 app.use("/user",route);
 
 app.listen(3000,()=>{
     console.log("server is up and running");
-});
+});  
